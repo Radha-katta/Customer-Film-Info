@@ -1,0 +1,15 @@
+<button class="btn btn-primary" (click)="showFilms()">Back</button>
+<div *ngIf="film !=undefined" class="filmDetails">
+<h3>Category:</h3> <div>{{film.category}}</div>
+<h3>Description:</h3><p>{{film.description}}</p>
+<h3>Length: </h3><p>{{film.length}}</p>
+<h3>Rating:</h3> <p>{{film.rating}}</p>
+<h3>Rental Duration:</h3> <p>{{film.rentDuration}}</p>
+<h3>Replacement Cost:</h3> <p>{{film.replacementCost}}</p>
+<h3>Special Features:</h3><p>{{film.specialFeatures}}</p>
+<h3>Title:</h3><p>{{film.title}}</p>
+
+<ng-template #noDetails>
+    <p>No Details Found</p>
+</ng-template>
+</div>

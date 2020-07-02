@@ -1,0 +1,15 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+                <app-customer-list (selectedCustomer)="onCustomerSelected($event)"
+                ></app-customer-list>
+        </div>
+        <div class="col-md-6" class="customerDetail">
+                <app-customer-detail *ngIf ="selectedCustomer; else infoText" [customer]="selectedCustomer" ></app-customer-detail>
+                <ng-template #infoText>
+                    <p>Please select a customer</p>
+                </ng-template>
+        </div>
+    </div>
+</div>

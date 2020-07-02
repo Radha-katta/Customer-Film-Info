@@ -1,0 +1,16 @@
+
+<div class="container">
+    <div class="row">
+        
+                <app-flim-list (selectedFilm)="onFilmSelected($event)"
+                ></app-flim-list>
+        
+       <!-- <div class="col-md-5" class="filmDetail">
+                <app-flim-details *ngIf ="selectedFilm; else filmInfoText" [film]="selectedFilm" >
+                </app-flim-details>
+                <ng-template #filmInfoText>
+                    <p>Please select a film</p>
+                </ng-template>
+        </div>-->
+    </div>
+</div>

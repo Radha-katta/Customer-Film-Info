@@ -1,0 +1,9 @@
+
+<router-outlet></router-outlet>
+<div class="table">
+
+<table id="customersOfFilmList" class="display" cellspacing="0" width="97%"></table>
+</div>
+
+<div *ngIf="showloading" class="spinner">Loading...</div>
+<button class="btn btn-primary" (click)="showFilms()">Back</button>
